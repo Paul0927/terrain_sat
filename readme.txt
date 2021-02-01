@@ -8,9 +8,9 @@ Requirements
 Quickstart
 Download Terrain Data:
 1. Download https://drive.google.com/file/d/15AOcK8hyQrmJJiwIErNMNe0FurP25jc6/view?usp=sharing
-2. Unzip the "data.rar" file and put the data in the "terrain_sat/Large_Terrain" directory. The terrain data directory path is "terrain_sat/Large_Terrain/data".
+2. Unzip the "data.rar" file and put the data in the "terrain_sat/Large_Terrain" directory. The terrain data directory path is "terrain_sat/Large_Terrain/data" (For example, the path of the first chunk in this directory is terrain_sat/Large_Terrain/data/000f0000").
 
-Build
+Compile and Build
 1. command: git clone https://github.com/Paul0927/terrain_sat.git
 2. command: cd terrain_sat
 3. command: mkdir build (The new directory path: terrain_sat/build)
@@ -18,6 +18,9 @@ Build
 5. command: cmake ../ -A x64 -DCMAKE_BUILD_TYPE=Release -G "Visual Studio 15 2017"
 6. Open "Large_Terrain.sln" in the "build" directory and set the environents with "Release" and "x64".
 7. Click the "Debug" button in the the Microsoft Visual Studio 2017.
+
+Run
+1.You can also directly run our demo in the "bin" directory, only if you copy the download terrain data to this directory (terrain_sat/bin/)
 
 Camera control:
 Key W: front
