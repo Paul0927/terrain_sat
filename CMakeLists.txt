@@ -3,6 +3,7 @@ cmake_minimum_required(VERSION 3.15)
 project(Large_Terrain)
 
 add_compile_options(/sdl)
+set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT Large_Terrain)
 
 set(CMAKE_BUILD_TYPE Release)
 set(BUILD_DIR "${CMAKE_CURRENT_BINARY_DIR}")
